@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 40px;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2, h3 {
+            color: #4a90e2;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #e94e77;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .alert-button {
+            margin: 20px 0;
+        }
+
+        .alert-button button {
+            padding: 12px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .alert-button button:hover {
+            background-color: #357ab8;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <main>
+        <h2>About This Page</h2>
+        <p>This webpage was built using basic HTML and enhanced with CSS. It features styled text, spacing, colors, and layout improvements.</p>
+
+        <h3>A Cool Image</h3>
+        <p>Here's a beautiful landscape to enjoy:</p>
+        <img src="https://picsum.photos/800/400" alt="Random landscape from Picsum Photos">
+
+        <!-- Button Section -->
+        <div class="alert-button">
+            <button onclick="showAlert()">Click Me!</button>
+        </div>
+
+        <h3>Useful Links</h3>
+        <p>Check out these helpful resources to learn more:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Learn HTML on MDN</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools - Web Development Tutorials</a></li>
+            <li><a href="https://unsplash.com/" target="_blank">Unsplash - Free Images</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My First Webpage. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Alert -->
+    <script>
+        function showAlert() {
+            alert("Hello there! Thanks for clicking the button 😊");
+        }
+    </script>
+
+</body>
+</html>
